@@ -109,4 +109,6 @@
   background-color: #232f3e;
   height: 40px;
 }
-.panel-bar{}
+.panel-bar {
+  color: white;
+}
