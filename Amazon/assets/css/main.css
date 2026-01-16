@@ -15,7 +15,7 @@
 }
 .nav-box {
   height: 50px;
-  width: 100px;
+  width: 114px;
 }
 
 .border:hover {
@@ -65,6 +65,7 @@
   font-size: 1rem;
   border: none;
   padding: 0;
+  padding-left: 1rem;
 }
 .nav-search-icon {
   width: 3.25rem;
@@ -77,7 +78,7 @@
   outline: none;
 }
 .nav-search:focus-within {
-  border: 3px solid #febd69;
+  border: 3.5px solid #d59f58;
 }
 .nav-9px-word {
   font-size: 12px;
@@ -108,7 +109,29 @@
 .panel {
   background-color: #232f3e;
   height: 40px;
-}
-.panel-bar {
+  display: flex;
   color: white;
+  align-items: center;
+}
+.panel-items {
+  font-size: 14px;
+  height: 65%;
+  padding: 0.5%;
+  padding-top: 0.5%;
+}
+.panel-border:hover {
+  border: 1px solid white;
+}
+
+/* main section */
+
+.main-background-image {
+  background-image: url("../images/hero_image.jpg");
+  background-size: cover;
+  height: 30rem;
+  width: 100%;
+}
+ 
+.main-msg{
+  background-color: white;
 }
