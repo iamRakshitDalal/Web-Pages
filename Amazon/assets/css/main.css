@@ -124,14 +124,140 @@
 }
 
 /* main section */
-
+main {
+  width: 100%;
+}
 .main-background-image {
   background-image: url("../images/hero_image.jpg");
   background-size: cover;
-  height: 30rem;
+  height: 400px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
- 
-.main-msg{
+
+.main-msg {
   background-color: white;
+  display: flex;
+  width: 97%;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+}
+
+.main-msg a {
+  color: #2162a1;
+  text-decoration: none;
+}
+.shop-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #e2e7e6;
+}
+
+.box {
+  height: 400px;
+  width: 21%;
+  background-color: white;
+
+  padding: 20px 1rem 15px 1rem;
+  margin: 15px 0px 0px 0px;
+}
+
+.box-img {
+  background-size: cover;
+  height: 300px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.box p {
+  color: #2162a1;
+}
+
+.box1-img {
+  background-image: url("../images/box1_image.jpg");
+}
+.box2-img {
+  background-image: url("../images/box2_image.jpg");
+}
+.box3-img {
+  background-image: url("../images/box3_image.jpg");
+}
+.box4-img {
+  background-image: url("../images/box4_image.jpg");
+}
+.box5-img {
+  background-image: url("../images/box5_image.jpg");
+}
+.box6-img {
+  background-image: url("../images/box6_image.jpg");
+}
+.box7-img {
+  background-image: url("../images/box7_image.jpg");
+}
+.box8-img {
+  background-image: url("../images/box8_image.jpg");
+}
+
+/* footer */
+
+.footer-panel-1 {
+  background-color: #37475a;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+}
+.footer-panel-2 {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #222f3d;
+  color: white;
+  height: 350px;
+}
+ul p {
+  margin: 40px 0px 14px;
+}
+ul a {
+  display: block;
+  text-decoration: none;
+  color: #dddddd;
+  font-size: 14px;
+  margin: 0px 0px 10px;
+}
+
+.footer-panel-3 {
+  background-color: #222f3d;
+  border-top: 1px solid #3a4553;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-panel-4 {
+  background-color: #131a22;
+  display: block;
+  text-decoration: none;
+  color: #dddddd;
+  font-size: 12px;
+  height: 80px; 
+  text-align: center;
+}
+.pages a {
+  text-decoration: none;
+  color: #dddddd;
+}
+
+.pages {
+  padding-top: 25px;
+}
+.copy-right {
+  padding-top: 5px;
 }
