@@ -1,0 +1,144 @@
+body {
+  background-color: black;
+  color: white;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  height: 550px;
+  width: 550px;
+  border: 0.25px solid #71767b;
+  display: flex;
+  padding: 10px 15px;
+}
+.user-image {
+  margin-right: 10px;
+}
+.user-image img {
+  height: 40px;
+  border-radius: 50px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.user-info {
+  display: flex;
+  justify-content: space-between;
+}
+.user-info-left {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.user-name {
+  font-size: 15px;
+  font-weight: bold;
+}
+.tick-sign {
+  fill: rgb(29, 155, 240);
+  width: 16px;
+  height: 16px;
+}
+.username {
+  font-size: 15px;
+  color: #71767b;
+}
+
+.user-info-right {
+  display: flex;
+  gap: 9px;
+  fill: #71767b;
+}
+.grok-sign {
+  width: 19px;
+  height: 18px;
+}
+.more-sign {
+  height: 18px;
+  width: 18px;
+}
+.content-section {
+  margin: -6pxpx;
+  font-size: 15px;
+}
+.image-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.images {
+  display: flex;
+  gap: 2px;
+  box-sizing: border-box;
+}
+.image-1 {
+  background-image: url("https://pbs.twimg.com/media/G_lRz-4XoAAM2DP?format=jpg&name=small");
+  background-size: cover;
+  height: 290px;
+  width: 249px;
+  border-radius: 5% 0 0 5%;
+}
+
+.image-2 {
+  background-image: url("https://pbs.twimg.com/media/G_lR0D8XQAAjHyw?format=jpg&name=small");
+  background-size: cover;
+  height: 290px;
+  width: 249px;
+  border-radius: 0 5% 5% 0;
+}
+.people-react {
+  font-size: 13px;
+  color: #71767b;
+}
+
+.intration-share {
+  display: flex;
+  color: #71767b;
+  font-size: 13px;
+  align-items: center;
+  gap: 75px; /* 
+  margin-top: 10px; */
+}
+.intraction-svg {
+  width: 19px;
+  height: 19px;
+  fill: #71767b;
+}
+.comment,
+.repost,
+.like,
+.views {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.share-save {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/* .save,
+.share {
+  display: flex;
+  align-items: center;
+} */
