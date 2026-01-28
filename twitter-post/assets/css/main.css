@@ -49,6 +49,13 @@ main {
   align-items: center;
   gap: 2px;
 }
+.user-info-left a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
 .user-name {
   font-size: 15px;
   font-weight: bold;
@@ -65,7 +72,7 @@ main {
 
 .user-info-right {
   display: flex;
-  gap: 9px;
+
   fill: #71767b;
 }
 .grok-sign {
@@ -77,7 +84,9 @@ main {
   width: 18px;
 }
 .content-section {
-  margin: -6pxpx;
+  margin: 0px;
+  margin-top: -6px;
+
   font-size: 15px;
 }
 .image-section {
@@ -115,13 +124,15 @@ main {
   color: #71767b;
   font-size: 13px;
   align-items: center;
-  gap: 75px; /* 
-  margin-top: 10px; */
+  gap: 59px;
 }
 .intraction-svg {
   width: 19px;
   height: 19px;
   fill: #71767b;
+}
+.intraction-values {
+  margin-top: -4px;
 }
 .comment,
 .repost,
@@ -129,16 +140,63 @@ main {
 .views {
   display: flex;
   align-items: center;
-  gap: 2px;
 }
 
 .share-save {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
-/* .save,
-.share {
-  display: flex;
-  align-items: center;
-} */
+
+.user-name:hover {
+  text-decoration: underline;
+}
+
+.user-info-left time:hover {
+  text-decoration: underline;
+}
+
+.share,
+.save,
+.intraction-svg-box,
+.user-info-right-box {
+  padding: 5px 7px;
+}
+.share:hover,
+.save:hover,
+.views:hover .intraction-svg-box,
+.comment:hover .intraction-svg-box,
+.user-info-right-box:hover {
+  border-radius: 50%;
+  background-color: rgba(29, 156, 240, 0.15);
+}
+
+.share:hover svg,
+.save:hover svg,
+.views:hover svg,
+.views:hover,
+.comment:hover svg,
+.comment:hover,
+.user-info-right-box:hover {
+  fill: rgb(29, 155, 240);
+  color: rgb(29, 155, 240);
+}
+
+.repost:hover svg,
+.repost:hover {
+  fill: rgb(155, 240, 29);
+  color: rgb(155, 240, 29);
+}
+.repost:hover .intraction-svg-box {
+  border-radius: 50%;
+  background-color: rgba(155, 240, 29, 0.15);
+}
+
+.like:hover svg,
+.like:hover {
+  fill: rgb(240, 29, 155);
+  color: rgb(240, 29, 155);
+}
+.like:hover .intraction-svg-box {
+  border-radius: 50%;
+  background-color: rgba(240, 29, 15, 0.15);
+}
