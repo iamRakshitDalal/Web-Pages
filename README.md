@@ -29,5 +29,5 @@ By exploring this repository, you’ll understand:
 
 These examples are great for beginners who want to practice and build confidence in foundational front-end skills.
 
-## 📁 Repository Structure
+
 
