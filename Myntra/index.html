@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <div class="nav-logo"></div>
+      <img class="nav-logo" src="./assets/images/myntra-2.svg" alt="" />
       <div class="nav-section">
         <div><a href="#">MEN</a></div>
         <div><a href="#">WOMEN</a></div>
@@ -24,13 +24,14 @@
         <div><a href="#">BEAUTY</a></div>
         <div><a href="#">GENZ</a></div>
         <div>
-          <a href="#">STUDIO <sup>NEW </sup></a>
+          <a href="#">STUDIO </a>
+          <span>NEW</span>
         </div>
       </div>
 
       <div class="nav-search">
         <div class="nav-search-icon">
-          <i class="fa-solid fa-magnifying-glass" style="color: #000000"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
         <input
           class="nav-search-input"
@@ -40,152 +41,213 @@
           placeholder="Search for products, brands and more"
         />
       </div>
+      <div class="nav-actions">
+        <div class="nav-profile">
+          <i class="fa-regular fa-user"></i>
+          <span>Profile</span>
+        </div>
+        <div class="nav-profile">
+          <i class="fa-regular fa-heart"></i>
+          <span>Wishlist</span>
+        </div>
+        <div class="nav-profile">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>Bag</span>
+        </div>
+      </div>
     </header>
     <main>
       <div class="page-detail" style="font-size: 14px">
-        Home / Clothing / <b style="margin-left: 4px"> Men T-shirts</b>
+        Home / Clothing / <b> Men T-shirts</b>
       </div>
       <div class="page-detail">
-        Men T-shirts <span style="color: #878b94">- 252569 items</span>
+        <b>Men T-shirts </b>
+        <span style="color: #878b94"> - 252569 items</span>
       </div>
       <div class="containt">
-        <div class="side-box"></div>
-        <section class="products">
-          <div class="products-item">
-            <img
-              class="products-items-img"
-              src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/NOVEMBER/26/F2yaqUNr_1b07b7a4929f497d973dc79bb7a975fb.jpg"
-              alt=""
-            />
-            <div class="products-item-meta-data">
-              <h3 class="products-item-meta-data-brand">WROGN</h3>
-              <h4 class="products-item-meta-data-type">
-                Pack of 2 Cotton T-shirts
-              </h4>
-              <div class="products-item-meta-data-price-box">
-                <div class="products-item-meta-data-price-discount-price">
-                  Rs. 699
-                </div>
-                <div class="products-item-meta-data-price-price">Rs. 1399</div>
-                <div class="products-item-meta-data-price-discount">
-                  (50% OFF)
-                </div>
-              </div>
-            </div>
+        <section class="fillters">
+          <h4 class="fillter-heading">FILTERS</h4>
+          <div class="fillter-box">
+            <h4>Categories</h4>
+            <div id="categorie"></div>
           </div>
+          <div class="fillter-box">
+            <h4>Brand</h4>
+            <div id="brand"></div>
+          </div>
+          <div class="fillter-box">
+            <h4>Price</h4>
+            <div>
+              <div class="myntra-filter">
+                <div class="filter-title">Price</div>
 
-          <div class="products-item">
-            <img
-              class="products-items-img"
-              src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/NOVEMBER/26/F2yaqUNr_1b07b7a4929f497d973dc79bb7a975fb.jpg"
-              alt=""
-            />
-            <div class="products-item-meta-data">
-              <h3 class="products-item-meta-data-brand">WROGN</h3>
-              <h4 class="products-item-meta-data-type">
-                Pack of 2 Cotton T-shirts
-              </h4>
-              <div class="products-item-meta-data-price-box">
-                <div class="products-item-meta-data-price-discount-price">
-                  Rs. 690
-                </div>
-                <div class="products-item-meta-data-price-price">Rs. 1399</div>
-                <div class="products-item-meta-data-price-discount">
-                  (50% OFF)
+                <div class="slider-ui">
+                  <div class="rail" id="rail">
+                    <div class="range" id="range"></div>
+                    <div class="thumb left" id="leftThumb"></div>
+                    <div class="thumb right" id="rightThumb"></div>
+                  </div>
+
+                  <div class="price-text">
+                    ₹<span id="minPrice">100</span> - ₹<span id="maxPrice"
+                      >10,100+</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="products-item">
-            <img
-              class="products-items-img"
-              src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/NOVEMBER/26/F2yaqUNr_1b07b7a4929f497d973dc79bb7a975fb.jpg"
-              alt=""
-            />
-            <div class="products-item-meta-data">
-              <h3 class="products-item-meta-data-brand">WROGN</h3>
-              <h4 class="products-item-meta-data-type">
-                Pack of 2 Cotton T-shirts
-              </h4>
-              <div class="products-item-meta-data-price-box">
-                <div class="products-item-meta-data-price-discount-price">
-                  Rs. 699
-                </div>
-                <div class="products-item-meta-data-price-price">Rs. 1399</div>
-                <div class="products-item-meta-data-price-discount">
-                  (50% OFF)
-                </div>
-              </div>
+          <div class="fillter-box">
+            <h4>Color</h4>
+            <div id="fillter-display-color"></div>
+          </div>
+          <div class="fillter-box">
+            <h4>Discount Range</h4>
+            <div id="fillter-discounts"></div>
+          </div>
+        </section>
+        <section>
+          <div class="all-product-select">
+            <div class="products-select-fil">
+              <select class="products-select">
+                <option>Bundles</option>
+              </select>
+              <select class="products-select">
+                <option>Country of Origin</option>
+              </select>
+              <select class="products-select">
+                <option>Size</option>
+              </select>
+            </div>
+            <div class="recomended-and-other">
+              <span>Sort By : </span>
+              <select>
+                <option value="recommended">Recommended</option>
+                <option value="new">What's New</option>
+                <option value="Popularity">Popularity</option>
+                <option value="better-dicount">Better Discount</option>
+                <option value="price-ase">Price: High to Low</option>
+                <option value="price-dec">Price: Low to High</option>
+                <option value="Customer Rating">Customer Rating</option>
+              </select>
             </div>
           </div>
-          <div class="products-item">
-            <img
-              class="products-items-img"
-              src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/NOVEMBER/26/F2yaqUNr_1b07b7a4929f497d973dc79bb7a975fb.jpg"
-              alt=""
-            />
-            <div class="products-item-meta-data">
-              <h3 class="products-item-meta-data-brand">WROGN</h3>
-              <h4 class="products-item-meta-data-type">
-                Pack of 2 Cotton T-shirts
-              </h4>
-              <div class="products-item-meta-data-price-box">
-                <div class="products-item-meta-data-price-discount-price">
-                  Rs. 699
-                </div>
-                <div class="products-item-meta-data-price-price">Rs. 1399</div>
-                <div class="products-item-meta-data-price-discount">
-                  (50% OFF)
+          <div class="offer">
+            UPTO ₹400 OFF <i class="fa-solid fa-play fa-rotate-270"></i>
+          </div>
+          <div class="latest-offer-bell">
+            <i class="fa-regular fa-bell"></i>
+          </div>
+          <section class="products" id="products">
+            <!-- ss -->
+            <!-- <div class="products-item">
+              <img
+                class="products-items-img"
+                src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/NOVEMBER/26/F2yaqUNr_1b07b7a4929f497d973dc79bb7a975fb.jpg"
+                alt=""
+              />
+
+              <div class="products-item-meta-data">
+                <h3 class="products-item-meta-data-brand">WROGN</h3>
+                <h4 class="products-item-meta-data-type">
+                  Pack of 2 Cotton T-shirts
+                </h4>
+                <div class="products-item-meta-data-price-box">
+                  <div class="products-item-meta-data-price-discount-price">
+                    Rs. 699
+                  </div>
+                  <div class="products-item-meta-data-price-price">
+                    Rs. 1399
+                  </div>
+                  <div class="products-item-meta-data-price-discount">
+                    (50% OFF)
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="products-item">
-            <img
-              class="products-items-img"
-              src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/NOVEMBER/26/F2yaqUNr_1b07b7a4929f497d973dc79bb7a975fb.jpg"
-              alt=""
-            />
-            <div class="products-item-meta-data">
-              <h3 class="products-item-meta-data-brand">WROGN</h3>
-              <h4 class="products-item-meta-data-type">
-                Pack of 2 Cotton T-shirts
-              </h4>
-              <div class="products-item-meta-data-price-box">
-                <div class="products-item-meta-data-price-discount-price">
-                  Rs. 699
-                </div>
-                <div class="products-item-meta-data-price-price">Rs. 1399</div>
-                <div class="products-item-meta-data-price-discount">
-                  (50% OFF)
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="products-item">
-            <img
-              class="products-items-img"
-              src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/2024/NOVEMBER/26/F2yaqUNr_1b07b7a4929f497d973dc79bb7a975fb.jpg"
-              alt=""
-            />
-            <div class="products-item-meta-data">
-              <h3 class="products-item-meta-data-brand">WROGN</h3>
-              <h4 class="products-item-meta-data-type">
-                Pack of 2 Cotton T-shirts
-              </h4>
-              <div class="products-item-meta-data-price-box">
-                <div class="products-item-meta-data-price-discount-price">
-                  Rs. 699
-                </div>
-                <div class="products-item-meta-data-price-price">Rs. 1399</div>
-                <div class="products-item-meta-data-price-discount">
-                  (50% OFF)
-                </div>
-              </div>
-            </div>
-          </div>
+            </div> -->
+            <!-- ee -->
+          </section>
         </section>
       </div>
     </main>
+    <footer>
+      <div class="footer-detail">
+        <div class="online-shopping">
+          <h5>ONLINE SHOPPING</h5>
+          <span>Men</span>
+          <span>Women</span>
+          <span>Kids</span>
+          <span>Home</span>
+          <span>Beauty</span>
+          <span>Genz</span>
+          <span>Gift Cards</span>
+          <span>Myntra Insider</span>
+        </div>
+        <div class="customer-polocy"><h5>CUSTOMER POLICIES</h5></div>
+        <div class="mobile-app">
+          <h5>EXPERIENCE MYNTRA APP ON MOBILE</h5>
+          <div>
+            <img
+              src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+              alt=""
+            />
+            <img
+              src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="orignal-return">
+          <div>
+            <img
+              width="48px"
+              height="40px"
+              src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
+              alt=""
+            />
+            <span>
+              <strong>100% ORIGINAL</strong> guarantee for all products at
+              myntra.com
+            </span>
+          </div>
+          <div>
+            <img
+              width="48px"
+              height="49px"
+              src="https://assets.myntassets.com/assets/images/retaillabs/2023/5/22/becb1b16-86cc-4e78-bdc7-7801c17947831684737106127-Return-Window-image.png"
+              alt=""
+            />
+            <span>
+              <strong>Return within 14days</strong> of receiving your order
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="popular-searchs">
+        <span>POPULAR SEARCHES</span>
+        <hr />
+      </div>
+      <div class="footer-brands">
+        <span
+          >Adidas | Arrow | Fila | Online Shopping | Nike | Pepe Jeans | Puma |
+          United Colors of Benetton | Fastrack | Shorts | Being Human | Skirts |
+          Woodland | Supra | Dresses | Clothing | Jewellery | T-shirts | Shoes |
+          Bags | Watches | Caps | Shirts | Backpacks | Flip Flops | Sunglasses |
+          Kurtas | Lingerie | Jackets | Skechers | Saree | Sandals | Puma
+          Tshirts | Woodland Shoes | Titan Watches | Fastrack Watches | Wrangler
+          Shirts | Adidas Tshirts | Nike Shoes | Roadster Shirts | Casual Shoes
+          | Running Shoes | Nike Sports Shoes | Jeans | Being Human Tshirts |
+          Converse Shoes | Cricket Shoes</span
+        >
+      </div>
+      <div class="footer-last">
+        <div>
+          <span>In case of any concern, <a href="#">Contact Us</a></span>
+        </div>
+        <div><span>© 2026 www.myntra.com. All rights reserved. </span></div>
+        <div><span>A Flipkart company</span></div>
+      </div>
+    </footer>
   </body>
+  <script src="./assets/javaScript/script.js"></script>
 </html>

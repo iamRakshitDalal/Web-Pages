@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main>
+      <section class="cart">
+        <h1 class="heading">Invoice</h1>
+        <div class="invoice-detail">
+          <div>
+            <div><span class="detail-h">From:</span></div>
+            <div><span class="detail">My Company</span></div>
+            <div><span class="detail">mycompany@email.com</span></div>
+          </div>
+          <div>
+            <div>
+              <span class="detail-h">Invoice #:</span>
+              <span class="detail">12345</span>
+            </div>
+            <div>
+              <span class="detail-h">Date:</span>
+              <span class="detail">01 Feb 2026</span>
+            </div>
+          </div>
+        </div>
+        <table>
+          <tr class="table-heading">
+            <th class="heading-item">Item</th>
+            <th class="heading-item-detail">Qty</th>
+            <th class="heading-item-detail">Price</th>
+            <th class="heading-item-detail">Total</th>
+          </tr>
+          <tr>
+            <td class="table-detail">Web Design</td>
+            <td class="table-detail">1</td>
+            <td class="table-detail">$500</td>
+            <td class="table-detail">$500</td>
+          </tr>
+          <tr>
+            <td class="table-detail">Hosting</td>
+            <td class="table-detail">1</td>
+            <td class="table-detail">$100</td>
+            <td class="table-detail">$100</td>
+          </tr>
+        </table>
+        <div class="total"><span class="detail-h">Grand Total: $600</span></div>
+        <button onclick="window.print()">Print Invoice</button>
+      </section>
+    </main>
+  </body>
+</html>
