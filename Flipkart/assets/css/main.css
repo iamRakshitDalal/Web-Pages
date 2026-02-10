@@ -1,73 +1,78 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  background-color: #f0f5ff;
 }
 
-.secondary-container {
+/* header */
+.header {
   display: flex;
+  height: 68px;
   justify-content: center;
   align-items: center;
+  gap: 40px;
+  background-color: white;
 }
-ul.action-menus {
+.header-search {
+  background-color: #f0f5ff;
   display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  padding: 12px;
-  justify-content: space-between;
+  height: 40px;
+  flex-basis: 800px;
+  border-radius: 7px;
+
+  svg {
+    padding: 8px 8px 12px;
+  }
+  input {
+    outline: none;
+    border: none;
+    background-color: #ffffff00;
+    width: 100%;
+    font-size: 17px;
+  }
+}
+.header-login {
+  display: flex;
+  gap: 4px;
+  select {
+    border: none;
+    font-size: 17px;
+  }
+}
+.header-cart-seller {
+  display: flex;
+  gap: 4px;
+  font-size: 17px;
+  span {
+    white-space: nowrap;
+  }
 }
 
-ul.action-menus li {
-  padding: 12px;
-  min-width: 110px;
+/* main */
 
-  /* background-color: tomato; */
+/* all-category */
+.all-category-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  background-color: white;
 }
-
-ul.action-menus li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
+.all-category {
+  display: flex;
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 16px;
+  }
+}
+.category-type {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 6px;
-}
-ul.action-menus li a .action-menu-item img {
-  width: 64px;
-  height: 64px;
-}
-
-/* products section */
-.product-block {
-  height: 550px;
-  width: 380px;
-}
-.heading-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.heading {
-  font-size: 22px;
-}
-.heading-icon-go-right {
-  border-radius: 50%;
-  background-color: rgb(58, 58, 227);
-  height: 25px;
-  width: 25px;
-  font-size: 22px;
-  color: white;
-}
-.products {
-  height: 215px;
-  width: 170px;
-}
-.product-items {
-}
-.product-img {
-}
-.product-type {
-}
-.product--discount {
+  span {
+    white-space: nowrap;
+    color: #333333;
+    font-size: 14px;
+  }
 }
